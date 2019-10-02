@@ -68,7 +68,7 @@ function md2html($tohtml)
 //end;
 header("charset:gbk");
 $blog_file=glob('*.md');
-if(!include("forest.setting.php"))
+if(!@include("forest.setting.php"))
 {
 	$icon="https://s2.ax1x.com/2019/10/03/uwZAxJ.png";
 	$blogname="forest";
